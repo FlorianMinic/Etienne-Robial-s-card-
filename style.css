@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primaryColor: #A306B6;
+    --backgroundArticle: #D9D9D9;
+    --secondaryTextColor: #f2f2f2;
+    --fontTitle: "Montserrat", sans-serif;
+    --primaryFont: "Source sans 3", sans-serif;
+}
+
+body {
+    font-family: var(--primaryFont);
+}
+
+header {
+    background-color: var(--primaryColor);
+    color: var(--secondaryTextColor);
+    min-height: 50vh;
+    padding: 0, 8rem;
+}
+
+nav a {
+    color: var(--secondaryTextColor);
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a>img {
+    display: inline-block;
+    width: 3rem;
+}
+
+.logo {
+    max-height: 100px;
+    padding: 1rem;
+
+}
+
+li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 8rem 1, 5rem;
+}
+
+.avatar {
+    max-height: 150px;
+    padding: 1rem;
+
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--fontTitle);
+}
+
+h1 h1 {
+    width: 8ch;
+    margin: auto;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+h1::before {
+    content: "";
+    display: block;
+    height: 8rem;
+    width: 8rem;
+    background-image: url(C:\WILD CODE SCHOOL\Quete dev 1\images\avatar.png);
+    background-size: contain;
+    margin: 2rem auto;
+    border: 3px solid var(--secondaryTextColor);
+    border-radius: 50%;
+    background-color: var(--secondaryTextColor);
+
+}
+
+
+h2 {
+    color: var(--primaryColor);
+}
+
+section {
+    text-align: center;
+}
+
+article:first-of-type {
+    margin-top: 0;
+    background-image: url(C:\WILD CODE SCHOOL\Quete dev 1\images\responsive.png);
+    background-size: 17rem;
+ }
+ 
+ article:last-of-type {
+    background-image: url(C:\WILD CODE SCHOOL\Quete dev 1\images\inclusive.png);
+    background-size: 17rem;
+ }
+
+
+article {
+    width: 18rem;
+    height: 18rem;
+    background-color: var(--backgroundArticle);
+    background-image: url(C:\WILD CODE SCHOOL\Quete dev 1\images\scalable.png);
+    background-size: 12rem;
+    background-repeat: no-repeat;
+    background-position: center top;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    gap: .8rem;
+    margin: 1rem auto;
+    border-radius: 5px;
+}
+
+
+
+button {
+background-color: var(--primaryColor);
+color: var(--secondaryTextColor);
+padding: .5rem 1rem;
+border-radius: 10px;
+text-transform: uppercase;
+border-style: none;
+margin bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+footer {
+    background-color: var(--backgroundArticle);
+    text-align: center;
+}
+
+footer a {
+    color: var(--primaryColor);
+}
